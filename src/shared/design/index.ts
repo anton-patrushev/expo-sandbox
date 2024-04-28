@@ -8,3 +8,6 @@ export {
   DesignSystemProvider,
   useTheme,
 } from "./contexts/DesignSystem.context";
+
+// components
+export * from "./components";
