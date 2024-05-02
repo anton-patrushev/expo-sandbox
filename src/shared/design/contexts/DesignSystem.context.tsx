@@ -8,7 +8,7 @@ type DesignSystemContextState = {
 };
 
 const DesignSystemContext = createContext<DesignSystemContextState | undefined>(
-  undefined
+  undefined,
 );
 
 type DesignSystemProviderProps = PropsWithChildren;
@@ -32,7 +32,7 @@ const useDesignSystemContext = () => {
 
   if (!value) {
     throw new Error(
-      "useDesignSystemContext must be used within a <DesignSystemProvider />. Make sure your app is wrapped with <DesignSystemProvider />"
+      "useDesignSystemContext must be used within a <DesignSystemProvider />. Make sure your app is wrapped with <DesignSystemProvider />",
     );
   }
 

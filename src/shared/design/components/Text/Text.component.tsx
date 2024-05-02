@@ -12,7 +12,7 @@ export const Text = ({ style, ...props }: TextProps) => {
 
   const textStyle = useMemo(
     () => [themedTextStyle.text, style],
-    [themedTextStyle, style]
+    [themedTextStyle, style],
   );
 
   return <RNText {...props} style={textStyle} />;

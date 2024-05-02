@@ -12,7 +12,7 @@ export const Tile = ({ style, ...props }: TileProps) => {
 
   const tileStyle = useMemo(
     () => [themedTileStyle.tile, style],
-    [themedTileStyle, style]
+    [themedTileStyle, style],
   );
 
   return <RNView {...props} style={tileStyle} />;
