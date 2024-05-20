@@ -11,3 +11,6 @@ export {
 
 // components
 export * from "./components";
+
+// utility hooks
+export * from "./themes/Theme.hook";
